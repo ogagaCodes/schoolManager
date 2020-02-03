@@ -1,0 +1,32 @@
+@media screen and (max-width: 850px) {
+
+    .customers{
+        display: grid;
+        margin-top:1em;
+        width:100%;
+        height:11em;
+        grid-template-columns:auto auto;
+        grid-template-rows: auto;
+        grid-area: "";
+    }
+}
+
+
+/* for ver small screens */
+
+@media screen and (max-width: 600px) {
+
+    .customers{
+        display: grid;
+        margin-top:1em;
+        margin-bottom: auto;
+        width:100%;
+        height:11em;
+        grid-template-columns:auto;
+        grid-template-rows: auto;
+        grid-area: "";
+    }
+}
+
+
+

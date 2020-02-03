@@ -1,0 +1,108 @@
+body{
+    padding:0;
+    background-color: black;
+    color:white;
+}
+#span:hover {
+    cursor: pointer;
+}
+#successMessage {
+    display:none;
+    position: absolute;
+    top:40%;
+    left: 40%;
+    text-align: center;
+    padding:1em;
+    width:15em;
+    height:8em;
+    margin: 0 auto;
+    background-color: blueviolet;
+    box-shadow: 3px 3px 3px black;
+    z-index: 2;
+    transition: ease-in-out;
+    animation: top 1s 1;
+}
+
+@keyframes top {
+    from{top:-50%}
+    to {top:40%}
+}
+
+.container{
+    width:30em;
+    margin:0 auto;
+    margin-top:10%;
+    
+}
+input{
+    padding: 5PX 5PX 5PX 5PX;
+    border-radius: 6px;
+    width:60%; 
+    font-size: large;
+    background-color: black;
+    border: none;
+    border-width: 0;
+    border-color: black;
+    box-shadow: none;
+    color: white;
+    transition: 0.5s;
+}
+input:focus{
+    border:none;
+    box-shadow: none;
+    border-width: 0;
+    outline-width: 0px;
+    border-color: black;
+    background-color:black;
+    color:white;
+}
+input#submitbtn{
+    width:10em;
+    height:2em;
+    margin-left:30%;
+    font-size:normal;
+}
+input#submitbtn:hover{
+    cursor: pointer;
+}
+label{
+    position: relative;
+    top:4px;
+    float: left;
+    width:10em;
+    font-size: large;
+}
+
+.formElement{
+    display: inline-block;
+    width:100%;
+    margin-top: 2em;
+}
+#showPassword{
+    position: relative;
+    float:right;
+    bottom:0em;
+    height:auto;
+    border: none;
+    font-size: large;
+
+}
+#showPassword:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+.animate {
+    font-family: cursive;
+    text-align:center;
+    margin-bottom: 5%;
+    font-size: larger;
+    color: darkred;
+    transition: margin-bottom 0.5s;
+    animation: width 0.5s 1;
+}
+
+@keyframes width {
+    from { margin-bottom:-5%;}
+    to {margin-bottom:5%}
+}
