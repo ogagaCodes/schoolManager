@@ -1,5 +1,5 @@
 const express =  require('express');
-const debug = require('debug')('app');
+//const debug = require('debug')('app');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const chalk = require('chalk');
