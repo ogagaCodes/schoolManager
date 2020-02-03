@@ -24,7 +24,7 @@ const studentRouter = require('./routes/studentRoute');
 
 
 
-app.use(morgan('tiny'));
+//app.use(morgan('tiny'));
 app.use('/schools', schoolRouter);
 app.use('/registration', regRouter);
 app.use('/admin', adminRouter);
