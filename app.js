@@ -38,6 +38,4 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
-app.listen(port, ()=>{
-    debug(`server listening on port ${chalk.green(port)}`);
-});
+app.listen(process.env.PORT, process.env.IP);
