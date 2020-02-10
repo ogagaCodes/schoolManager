@@ -43,9 +43,9 @@ app.get("/", function(req, res){
     app.listen(3000, function(){
         console.log('app listening on port 3000');
     });
- } else{
-    app.listen(process.env.PORT, process.env.IP);
  }
-
+    
+ app.listen(process.env.PORT, process.env.IP);
  
 
+ 
