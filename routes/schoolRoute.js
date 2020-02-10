@@ -3,7 +3,7 @@ const schoolRouter = express.Router();
 
 schoolRouter.route('/')
 .get((req, res)=>{
-     res.send("this will display all schools");
+     res.render("school.ejs");
     
 })
 

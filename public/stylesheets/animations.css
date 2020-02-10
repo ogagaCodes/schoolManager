@@ -1,0 +1,48 @@
+.introTxt1{
+    position:relative;
+    top:0%;
+    transition: 1s;
+    animation: top 1s 1;
+}
+
+@keyframes top {
+    from{ top:-10%}
+    to {top: 0%;}
+}
+
+.introTxt2 {
+    transition: 2s;
+    animation: margin 2s 1;
+} 
+
+@keyframes margin {
+    from{margin-bottom:- 10%}
+    to {margin-bottom:0% }
+}
+
+.customer1, .customer2, .customer3, .customer4{
+    transition:1s ease-in-out;
+}
+
+.customer1:hover{
+    transform: rotateY(180deg);
+    background-color: chocolate;
+    content: "Just the best";
+}
+.customer2:hover{
+    transform: rotateY(180deg);
+    background-color: chocolate;
+    content: "Just the best";
+}
+.customer3:hover{
+    transform: rotateY(180deg);
+    background-color: chocolate;
+    content: "Just the best";
+}
+.customer4:hover{
+    transform: rotateY(180deg);
+    background-color: chocolate;
+    content: "Just the best";
+}
+
+

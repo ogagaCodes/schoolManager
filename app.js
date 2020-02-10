@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const express =  require('express');
 //const debug = require('debug')('app');
 //const morgan = require('morgan');
@@ -10,6 +11,7 @@ const app = express();
 //const port = 3000 || process.env.PORT;
 
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
@@ -25,7 +27,7 @@ const studentRouter = require('./routes/studentRoute');
 
 
 //app.use(morgan('tiny'));
-app.use('/schools', schoolRouter);
+app.use('/school', schoolRouter);
 app.use('/registration', regRouter);
 app.use('/admin', adminRouter);
 app.use('/signUp', signUpRouter);
@@ -39,3 +41,6 @@ app.get("/", function(req, res){
 });
 
 app.listen(process.env.PORT, process.env.IP);
+/*  app.listen(3000, function(){
+    console.log('app listening on port 3000');
+}) */

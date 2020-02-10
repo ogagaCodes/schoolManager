@@ -3,7 +3,7 @@ const regRouter = express.Router();
 
 regRouter.route('/')
 .get((req, res)=>{
-     res.send("this will be the registration form page");
+     res.render("registration.ejs");
     
 })
 
