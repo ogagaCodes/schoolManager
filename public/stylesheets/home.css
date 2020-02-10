@@ -182,7 +182,7 @@ a {
     display:block;
     width:100%;
     height:5em;
-    background-color: cornsilk;
+    background-color: rgb(56, 53, 48);
     z-index: 2;
 } 
 
@@ -191,7 +191,10 @@ a {
     top:50%;
     width:100%;
     height:30em;
-    background-color: blanchedalmond;
+    padding:0.5em;
+    padding-bottom: 0%;
+    box-sizing: border-box;
+    background-color: rgb(56, 53, 48);
     margin-top:-300px;
 }
 
@@ -248,5 +251,17 @@ a {
     width:100%;
     height: auto;
     margin-top:2em;
+    background-color: brown;
+    padding:0.3em;
+    box-sizing: border-box;
+    
 
+}
+
+.lastP {
+    text-align:center;
+    width:90%;
+    margin:0 auto;
+    margin-top:1em;
+    padding: 1em;
 }
