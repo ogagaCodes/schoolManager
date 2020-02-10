@@ -1,6 +1,7 @@
 .bodyContainer {
     padding:0;
     width:100%;
+    height:fit-content;
     margin:0;
     background-image: url(/images/login.jpg);
     background-repeat: no-repeat;
@@ -35,13 +36,13 @@
     border-radius:5px;
 }
 .labelC {
-    color: white;
+    color: black;
 }
 
 .formC {
     display:block;
     width: 80%;
-    height:80%;
+    height:100%;
     margin:0 auto;
     font-size: x-large;
     background:none;
@@ -79,4 +80,16 @@
     font-weight: 800;
     background-color: blue;
     color:white;
+}
+
+
+.Loginfooter{
+    display: block;
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom:0;
+    padding:1em;
+    box-sizing:border-box ;
 }
