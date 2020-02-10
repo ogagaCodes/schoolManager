@@ -2,7 +2,8 @@ html, body {
     padding: 0;
     margin:0;
     width:100%;
-    height:auto;
+    height:700px;
+    min-height: 100vh;
     display:flex;
     background-image: url(/images/main1.jpg);
     background-repeat: no-repeat;
@@ -27,7 +28,7 @@ html, body {
 
 .mainContainer{
     width:100%;
-    height: 80%;
+    height: auto;
     
 }
 .intro {
@@ -67,6 +68,7 @@ html, body {
     align-items: center;
     justify-content: center;
     width:80%;
+    height:auto;
     margin:0 auto;
     font-size:150%;
     font-weight: 800;
@@ -105,7 +107,7 @@ html, body {
     height:auto;
    text-align:center;
     font-size: xx-large;
-    color:blue;
+    color:teal;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -141,24 +143,24 @@ html, body {
 
 
  .register {
-     position: fixed;
-     top: 85%;
-     text-align: center;
+     display:block;
      padding: 1em;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    width:100%;
+     box-sizing: border-box;
+    width:40%;
     height:auto;
     margin:0 auto;
     background-color: none;
 
 }
 .registerP {
-    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0);
-    width:auto;
+    width:100%;
+    margin:0 auto;
     padding:1em;
+    box-sizing: border-box;
     border-radius: 1.5em;
 }
 
@@ -183,3 +185,68 @@ a {
     background-color: cornsilk;
     z-index: 2;
 } 
+
+.aboutUs {
+    position:relative;
+    top:50%;
+    width:100%;
+    height:30em;
+    background-color: blanchedalmond;
+    margin-top:-300px;
+}
+
+.abouUsHeader{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding:0.6em;
+    box-sizing: border-box;
+    width:100%;
+    height: 4em;
+    font-weight: 800;
+}
+.services{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:4em;
+    font-weight: 800;
+    align-items:center;
+    justify-items:center;
+}
+
+.serviceItems {
+    width:40%;
+    height:3.8em;
+    margin:0 auto;
+    text-align:center;
+    padding:1em;
+    box-sizing: border-box;
+    font-size:x-large;
+    background-color: teal;
+    color:white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:50%;
+}
+
+.lastService{
+    margin-top:1em;
+}
+
+.callToAction{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.builtBy {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height: auto;
+    margin-top:2em;
+
+}
