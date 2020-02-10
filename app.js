@@ -40,7 +40,8 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
-app.listen(process.env.PORT, process.env.IP);
-/*  app.listen(3000, function(){
+//app.listen(process.env.PORT, process.env.IP);
+  app.listen(3000, function(){
     console.log('app listening on port 3000');
-}) */
+});
+

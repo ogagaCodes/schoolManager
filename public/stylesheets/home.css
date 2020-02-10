@@ -30,6 +30,10 @@ html, body {
     height: 80%;
     
 }
+.intro {
+    color:black;
+    text-shadow: 3px 3px black;
+}
 
 .clear {
     clear:both;
@@ -59,11 +63,17 @@ html, body {
 }
 
 .mainContent {
-    width:100%;
-    font-size: xx-large;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    margin:0 auto;
+    font-size:150%;
     font-weight: 800;
     padding:none;
     text-align: center;
+    
+    
 }
 
 .boldHeader {
@@ -80,7 +90,7 @@ html, body {
     border:none;
     margin-left:0;
     background: transparent;
-    font-size: xx-large;
+    font-size: 150%;
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 3px solid white;

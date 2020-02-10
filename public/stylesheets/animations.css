@@ -5,19 +5,25 @@
     animation: top 1s 1;
 }
 
-@keyframes top {
-    from{ top:-10%}
-    to {top: 0%;}
-}
 
-.introTxt2 {
-    transition: 2s;
-    animation: margin 2s 1;
-} 
+
 
 @keyframes margin {
     from{margin-bottom:- 10%}
     to {margin-bottom:0% }
+}
+
+.introTxt2 {
+    position:relative;
+    right:0%;
+    transition:1s ease-in-out;
+    animation: right 1s 1;
+}
+@keyframes right {
+    from{rigth: -20%}
+    to{
+        right:0%
+    }
 }
 
 .customer1, .customer2, .customer3, .customer4{
