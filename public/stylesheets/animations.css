@@ -1,3 +1,7 @@
+.hide {
+    display: none;
+}
+
 .introTxt1{
     position:relative;
     top:0%;
@@ -27,7 +31,17 @@
 }
 
 .customer1, .customer2, .customer3, .customer4{
+    width: 80%;
     transition:1s ease-in-out;
+    animation: width 1s 1;
+} 
+@keyframes width {
+    from{ width:50%; 
+         opacity:0%
+    }
+    to {  width:80%;
+       opacity: 100%;
+    }
 }
 
 .customer1:hover{

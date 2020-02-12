@@ -1,12 +1,21 @@
 /* eslint-disable no-undef */
 const express =  require('express');
-//const debug = require('debug')('app');
-//const morgan = require('morgan');
 const bodyParser = require('body-parser');
-//const chalk = require('chalk');
-
-
 const app = express();
+let debug = require('debug');
+let  morgan = require('morgan');
+let chalk = require('chalk');
+if ( `development`) {
+     debug = require('debug')('app');
+     app.use(morgan('tiny'));
+     app.listen(3000, function(){
+        debug(`app listening on port ${chalk.green('3000')} `);
+        });
+}
+
+
+
+
 
 //const port = 3000 || process.env.PORT;
 
@@ -26,7 +35,8 @@ const studentRouter = require('./routes/studentRoute');
 
 
 
-//app.use(morgan('tiny'));
+
+
 app.use('/school', schoolRouter);
 app.use('/registration', regRouter);
 app.use('/admin', adminRouter);
@@ -39,11 +49,7 @@ app.get("/", function(req, res){
 
     res.render("home");
 });
- if ( `development`){
-    app.listen(3000, function(){
-        console.log('app listening on port 3000');
-    });
- }
+
     
  app.listen(process.env.PORT, process.env.IP);
  
