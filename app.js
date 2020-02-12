@@ -2,7 +2,7 @@
 const express =  require('express');
 const bodyParser = require('body-parser');
 const app = express();
-let debug = require('debug');
+/*let debug = require('debug');
 let  morgan = require('morgan');
 let chalk = require('chalk');
 if ( `development`) {
@@ -11,7 +11,7 @@ if ( `development`) {
      app.listen(3000, function(){
         debug(`app listening on port ${chalk.green('3000')} `);
         });
-}
+}*/
 
 
 
