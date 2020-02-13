@@ -2,16 +2,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const chalk = require("chalk");
-
-/*if (`development`) {
-  let debug = require("debug");
-  let morgan = require("morgan");
-  
-  debug = debug("app");
-  app.use(morgan("tiny"));
-  
-} */
 
 //const port = 3000 || process.env.PORT;
 
@@ -41,12 +31,6 @@ app.use("/auth", authRouter);
 app.get("/", function(req, res) {
   res.render("home");
 });
-if(`development`){
-    app.listen(3000, function() {
-        console.log(`app listening on port ${chalk.green("3000")} `);
-      });
-} 
-    app.listen(process.env.PORT, process.env.IP);
 
-
+app.listen(process.env.PORT, process.env.IP);
 
