@@ -1,15 +1,20 @@
 .bodyContainer {
     padding:0;
     width:100%;
-    height:fit-content;
+    height: auto;
+    
     margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: linear-gradient(white, blue, black);
+    background-blend-mode: luminosity;
     background-image: url(/images/login.jpg);
     background-repeat: no-repeat;
-    
     background-attachment: fixed;
     background-size: cover;
-    background-color: black;
-    background-blend-mode: lighten;
+    
+    
+    
 }
 
 .appLogo
@@ -31,12 +36,13 @@
     justify-content: center;
     background:none;
     text-align: center;
-    margin-top:15%;
-    padding:2em;
+    margin-top:10%;
+    padding:0;
     border-radius:5px;
 }
 .labelC {
     color: black;
+   
 }
 
 .formC {
@@ -44,6 +50,7 @@
     width: 80%;
     height:100%;
     margin:0 auto;
+    margin-top:0%;
     font-size: x-large;
     background:none;
     color:blue;
@@ -51,6 +58,8 @@
  .userNameContainer, .passwordContainer {
     padding:none;
     width:100%;
+    margin-top:0.2em;
+    
 
 
 }
@@ -58,28 +67,36 @@
     width:80%;
     height:2.5em;
     padding:0.5em;
+    border: 1px solid thistle;
     border-radius: 10px;
+    box-shadow: 2px 2px white;;
+    background: none;
 }
  .userNameC:focus {
      
      outline:black;
-     caret-color: brown;
+     border-bottom: 3px solid blue;
+     
      
  }
  .passwordC:focus {
      
     outline:black;
-    caret-color: brown;
+    border-bottom: 3px solid blue;
+    
     
 }
 .submit {
     border:none;
-    width:80%;
+    width:30%;
     height:2em;
     margin:0 auto;
+    margin-top:0.2em;
     font-weight: 800;
-    background-color: blue;
-    color:white;
+    background-color: thistle;
+    box-shadow: 1px 1px white;
+    caret-color: blue;
+    
 }
 
 

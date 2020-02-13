@@ -1,7 +1,8 @@
 body{
     height:100%;
     width:auto;
-    background: linear-gradient(teal, thistle)
+    background: linear-gradient(teal, thistle);
+    transition:1s all ease-in-out;
 }
 .appLogo
  {
@@ -30,22 +31,22 @@ body{
     transition: 1s;
 
 }
- #conatiner{
-     background-color: whitesmoke;
-     padding:1em;
-     border-radius: 3px;
-    box-sizing: border-box;
-    box-shadow: 3px 3px 5px black;
- 
- }
 
+  .container{
+      width:20em;
+      padding:0;
+      
+  }
  .formElement{
-     width:auto;
+     width:100%;
+     height:5em;
      display:flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
-     margin-top:1.4em;
+     margin-top:0;
      text-align: center;
+   
     }
 
     label{
@@ -63,16 +64,23 @@ body{
     }
 
     .inpt{
-        width:80%;
-        height:3em;
-        background-color: thistle;
+        width:100%;
+        height:auto;
+        background:transparent;
         padding:0.3em;
+        box-sizing: border-box;
+    }
+
+    label{
+        width:100%;
     }
     .pssInpt{
         border: none;
         height:100%;
         width:80%;
-        background-color: thistle;
+        background:none;
+        border:1px solid thistle;
+        box-shadow: 1px 1px 1px white;
     }
    #specialInpt{
        display:flex;
@@ -84,10 +92,12 @@ body{
         width:30%;
         height:3em;
         margin: 0 auto;
+        margin-top:-7em;
         text-align: center;
         color:black;
-        background-color: thistle;
+        background-color: rgba(0, 0, 255, 0.075);
         border-radius: 3px;
+        font-weight:900;
     }
 
     input:focus{
